@@ -3,11 +3,12 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We find the boxes that have same value and the value length is 2 in unit, then remove the digits from the other box that in the same unit. so no other box in their
+   same unit can contain the same digits and no squares outside the two naked twins squares can contain the twin values.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: There are two diagonals, each has 9 boxes, we fill each diagonal of grid with all of the digits from 1 to 9.
 
 ### Install
 
