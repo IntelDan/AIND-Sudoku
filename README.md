@@ -5,10 +5,13 @@
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: We find the boxes that have same value and the value length is 2 in unit, then remove the digits from the other box that in the same unit. so no other box in their
    same unit can contain the same digits and no squares outside the two naked twins squares can contain the twin values.
+   For example, there are twins in the same column which contain the digit 2 and 3, namely there are two boxes who have same value {2,3} in the column, then we can eliminate the 
+   digit 2 and 3 from the other boxes that in the same column, thus we reduce the occurrence probability of digit 2 or 3 and solve the sudou more faster.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: There are two diagonals, each has 9 boxes, we fill each diagonal of grid with all of the digits from 1 to 9.
+    Just like we add constraint propagation to the row, column or square, we make the boxes in the same diagonal have the numbers from 1 to 9 only once.
 
 ### Install
 
